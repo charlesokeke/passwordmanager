@@ -25,7 +25,6 @@ def scan_ports(ip, ports):
 
     return data
 
-
 def decode_data(s):
     return s.recv(1024)
 
