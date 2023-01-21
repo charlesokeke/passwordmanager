@@ -1,6 +1,6 @@
 import socket
 import re
-from IPy import IP
+#from IPy import IP
 
 regex_ip = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 regex_domain = "^((?!-)[A-Za-z0-9-]" + "{1,63}(?<!-)\\.)" +"+[A-Za-z]{2,6}"
@@ -52,3 +52,4 @@ if test(ipaddress.split(",")) and validate_port(port_num):
     print(scan_result)
 else:
     print("invalid")
+scan_ports(ipaddress,port_num)
